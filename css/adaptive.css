@@ -1,0 +1,36 @@
+@media screen and (max-width: 1200px) {
+  .info {
+    flex-wrap: wrap;
+    max-width: 80%;
+  }
+  .info__item {
+    width: 50%;
+    text-align: center;
+    padding-left: 0;
+  }
+  .info__item:nth-child(2) {
+    border-right: 0px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .info {
+    flex-direction: column;
+    top: 24px;
+    padding: 24px 24px 0;
+  }
+  .menu {
+    padding-top: 24px;
+  }
+  .menu__title {
+    margin-bottom: 29px;
+  }
+  .input__block {
+    width: 80%;
+  }
+  .info__text {
+    margin-top: 7px;
+  }
+  .info__item {
+    border-right: 0px;
+  }
+}

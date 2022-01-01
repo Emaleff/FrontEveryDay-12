@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/adaptive.css" />
+    <title>12</title>
+  </head>
+  <body>
+    <div class="loader__container">
+      <div class="loader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <main class="container">
+      <div class="menu">
+        <div class="menu__title">IP Address Tracker</div>
+        <div class="input__block">
+          <input
+            type="text"
+            class="input"
+            placeholder="Search for any IP address or domain"
+          />
+          <button class="input__btn">
+            <img src="./images/btnImg.svg" alt="" />
+          </button>
+        </div>
+        <div class="info">
+          <div class="info__item">
+            <div class="info__title">IP Address</div>
+            <div class="info__text" id="address"></div>
+          </div>
+          <div class="info__item">
+            <div class="info__title">Location</div>
+            <div class="info__text" id="locationText"></div>
+          </div>
+          <div class="info__item">
+            <div class="info__title">Timezone</div>
+            <div class="info__text" id="timezone"></div>
+          </div>
+          <div class="info__item">
+            <div class="info__title">ISP</div>
+            <div class="info__text" id="isp"></div>
+          </div>
+        </div>
+      </div>
+      <div class="map" id="map"></div>
+    </main>
+
+    <script
+      async="false"
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCB2_cLfq2EWxfHXNIPWVId2lzaTsUDpRc
+      "
+    ></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
