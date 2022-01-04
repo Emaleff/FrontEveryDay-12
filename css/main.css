@@ -88,7 +88,7 @@
   max-width: 1110px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
   background: #ffffff;
   box-shadow: 0px 50px 50px -25px rgba(0, 0, 0, 0.0983665);
   border-radius: 15px;
@@ -98,10 +98,12 @@
   z-index: 1;
 }
 .info__item {
-  height: 75px;
   border-right: 1px solid rgba(0, 0, 0, 1);
   width: 277px;
   padding-left: 32px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
 }
 .info__item:last-child {
   border-right: 0;

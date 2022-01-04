@@ -53,10 +53,7 @@ inputBtn.addEventListener("click", () => {
       })
       .then((data) => {
         console.log(data);
-        address.textContent = data.ip_address;
-        locationText.textContent = data.city;
-        timezone.textContent = "UTC + " + data.timezone.abbreviation;
-        isp.textContent = data.connection.autonomous_system_organization;
+        renderData(data);
         initMap(parseFloat(data.latitude), parseFloat(data.longitude));
       });
   } else {
@@ -79,17 +76,17 @@ function startApp() {
     loader__container.classList.add("close");
     container.classList.add("open");
     console.log(data);
-    address.textContent = data.ip_address;
-    locationText.textContent = data.city;
-    timezone.textContent = data.timezone.abbreviation;
-    isp.textContent = data.connection.autonomous_system_organization;
+    renderData(data);
     console.log(data.latitude);
     initMap(parseFloat(data.latitude), parseFloat(data.longitude));
   }
   Fetch();
 }
 
-function openModal() {
-  
+function renderData(data) {
+  address.textContent = data.ip_address;
+  locationText.textContent = data.city;
+  timezone.textContent = data.timezone.abbreviation;
+  isp.textContent = data.connection.autonomous_system_organization;
 }
 startApp();
