@@ -34,5 +34,6 @@
   }
   .info__item {
     border-right: 0px;
+    width: 100%;
   }
 }
